@@ -1,0 +1,80 @@
+#mainframe{
+           background-image: url("../picture/uselogo.png");
+           width:1400px;
+           height:200px;   
+           background-repeat:no-repeat;
+    }
+    #total{
+           width:1400px;
+           height:450px;
+    }
+    #photototal{
+          background-image: url("../picture/hot.jpg");
+           width:300px;
+           height:350px;
+           float:left;
+           margin-top:50px;
+           margin-left:50px;
+           
+    }
+    #photodescribe{
+           width:300px;
+           float:left;
+           height:50px;
+    }
+    #photo{
+           witdth:300px;
+           height:350px;
+    }
+    #msg{
+          background-image: url("../picture/content.jpg");
+          width:600px;
+          height:350px;
+          float:left;
+          margin-top:50px;
+    }
+    #describetotal{
+          background-image: url("../picture/menu.jpg");
+          width:400px;
+          height:350px;
+          float:left;
+          margin-top:50px;
+          margin-right:50px;
+    }
+    #welcome{
+          width:300px;
+          height:50px;
+          float:left;
+          margin-left:50px;
+          margin-right:50px;
+    }
+    #describe{
+          width:400px;
+          height:300px;
+          float:left;
+          
+    }
+    #frameb{
+		width:1400px;
+		height:550px;
+	}
+	#find{
+		float:left;
+		width:450px;
+		height:300px;
+		background-image: url("../picture/hot.jpg");
+		margin-left:100px;
+		margin-top:50px;
+	}
+	#recommend{
+		float:right;
+		width:450px;
+		height:300px;
+		background-image: url("../picture/hot.jpg");
+		margin-top:50px;
+		margin-right:100px;
+	}
+	#content{
+	   background-color: lightblue;
+	   margin-left:50px;
+	}

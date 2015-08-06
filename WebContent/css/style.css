@@ -1,0 +1,257 @@
+/* Basic Styling */
+.contain-all {
+  margin: auto;
+  width: 150px;
+}
+.icon-hook {
+  position: relative;
+}
+
+.icon-hook:after {
+  content: "";
+  top: 0;
+  left: 0;
+}
+
+.icon-hook > svg {
+  pointer-events: none;
+}
+
+svg {
+  position: absolute;
+  z-index: 5;
+}
+
+
+/* Cart Demo 1 */
+.check-1 {
+  opacity: 0;
+  -webkit-transform-origin: center;
+}
+
+.apple-1 {
+  position: relative;
+  opacity: 0;
+  top: -10px;
+  left: 35px;
+  width: 60px;
+  -webkit-transform: rotate(-40deg);
+}
+
+.active .apple-1 {
+  -webkit-animation: add-apple-1 2s forwards;
+}
+
+.active .cart-plus-1 {
+  -webkit-animation: added 1s forwards;
+}
+
+.active .check-1 {
+  -webkit-animation: checked 1s forwards;
+}
+
+
+@-webkit-keyframes add-apple-1 {
+  50% {
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: translateY(57px);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes added {
+  1% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes checked {
+  50% {
+    opacity: 1;
+    -webkit-transform: scale(1.5);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Save Demo 1 */
+.star-icon {
+  left: 25px;
+  width: 80px;
+}
+
+.star-dashes-1 {
+  opacity: 0;
+}
+
+.star-check-1 {
+  opacity: 1;
+  stroke-dasharray: 22;
+  stroke-dashoffset: 22;
+}
+
+.active .star-dashes-1 {
+  -webkit-animation: flash-1 1s forwards;
+}
+
+.active .star-check-1 {
+  -webkit-animation: star-checked-1 1s forwards;
+}
+
+@-webkit-keyframes flash-1 {
+  50% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes star-checked-1 {
+  50% {
+    stroke-dashoffset: 0;
+  }
+  75% {
+    stroke-dashoffset: 0;
+    -webkit-transform-origin: center;
+    -webkit-transform: rotate(360deg) scale(1.5);
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+
+/* Gift Demo 1 */
+.box-icon {
+  left: 30px;
+}
+
+.bow-1 {
+  stroke-dasharray: 140;
+  stroke-dashoffset: -140;
+}
+
+.bow-1-right {
+  stroke-dashoffset: 140;
+}
+
+.active .bow-1 {
+  -webkit-animation: draw-bow-1 1s forwards;
+}
+
+.active .bow-1-right {
+  -webkit-animation: draw-bow-1 1s 1s forwards;
+}
+
+@-webkit-keyframes draw-bow-1 {
+  1% {
+    opacity: 1;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+
+/* Favorites Demo 1 */
+.heart-icon {
+  top: 0px;
+  left: 22px;
+}
+
+.loader-1 {
+  opacity: 0;
+  -webkit-transform: scale(.3);
+}
+
+.active .heart-1 {
+  -webkit-transform-origin: center;
+  -webkit-animation: grow-heart 500ms 2s forwards;
+  stroke: #ec6d46;
+}
+
+.active .loader-1-l {
+  -webkit-animation: load-1 500ms 500ms forwards;
+}
+
+.active .loader-1-m {
+  -webkit-animation: load-1 500ms 1s forwards;
+}
+
+.active .loader-1-r {
+  -webkit-animation: load-1 500ms 1500ms forwards;
+}
+
+@-webkit-keyframes load-1 {
+  50% {
+    opacity: 1;
+    -webkit-transform-origin: center;
+    -webkit-transform: scale(2);
+  }
+}
+
+@-webkit-keyframes grow-heart {
+  50% {
+    -webkit-transform: scale(.3);
+  }
+}
+
+
+/* Truck Icon Demo 1 */
+.truck-icon {
+  top: 60px;
+}
+
+.inside-truck {
+  position: absolute;
+  top: 67px;
+  left: 2px;
+  width: 77px;
+}
+
+.active .truck-back-1 {
+  -webkit-transform-origin: center;
+  -webkit-animation: truck-flip 2s forwards, add-orange 1s 1s forwards;
+}
+
+.active .inside-truck {
+  -webkit-transform-origin: center;
+  -webkit-animation: truck-flip 2s forwards;
+}
+
+.active .tire-plus-1 {
+  -webkit-animation: turn-plus 1s 500ms forwards;
+  stroke: #7aa23f;
+}
+
+@-webkit-keyframes turn-plus {
+  50% {
+    -webkit-transform-origin: center;
+    -webkit-transform: scale(1.5);
+  }
+  100% {
+    -webkit-transform-origin: center;
+    -webkit-transform: rotate(45deg);
+  }
+}
+
+@-webkit-keyframes truck-flip {
+  50% {
+    -webkit-transform: scale(.7);
+  }
+  100% {
+    -webkit-transform: scale(1) rotateY(180deg);
+  }
+}
+
+@-webkit-keyframes add-orange {
+  to {
+    fill: none;
+    stroke: none;
+  }
+}
+

@@ -1,0 +1,50 @@
+#bg{ 
+    background-image:url("../picture/major1.jpg");
+    background-repeat:repeat-y;
+}
+  
+#frames{
+
+	   width:1000px;
+	   height:50px;
+}
+#search{
+	  width:300px;
+	  height:30px;
+	  float:right;
+	  margin-top:10px;
+	  margin-right:100px;
+}
+#framew{
+	  background-color:#0099cc;
+	  width:1000px;
+	  height:50px;
+}
+/* #disuse{
+	 background-color:black;
+	 width:1000px;
+	 height:100px;
+	 float:right;
+} */
+#delete{
+	 background-color:yellow;
+	 width:50px;
+	 height:25px;
+	 margin-right:120px;
+	 float:right;
+	 margin-top:10px;
+}
+#add{
+	background-color:yellow;
+	width:50px;
+	height:25px;
+	float:right;
+	margin-right:50px;
+	margin-top:10px;
+}
+#content{
+	width:1000px;
+	height:1000px;
+	margin-top:50px;
+}
+
